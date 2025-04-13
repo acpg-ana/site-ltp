@@ -3,22 +3,20 @@
     margin: 5px;
 }
 
-/* Contêiner principal para alinhar as três divs lado a lado */
-.container {
-    position: absolute;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px; /* espaço entre os elementos */
+.conteudo{
+    margin-top: 5%;
+    height: 80%;
+    width: 100%;
 }
-
+.primeiro,.segundo,.terceiro{
+    height:60%;
+    width: 30%;
+    margin-top: 5%;
+}
 .primeiro{
     position: absolute;
     margin-left: 5%;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
@@ -28,16 +26,12 @@
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 400px;
-    width: 30%;
 }
 
 .segundo{
     position: absolute;
     margin-left: 35%;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
@@ -47,16 +41,12 @@
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 400px;
-    width: 30%;
 }
 
 .terceiro{
     position: absolute;
     margin-left: 65%;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
@@ -66,33 +56,47 @@
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 400px;
-    width: 30%;
 }
 
-.quarto {
-    justify-content:end;
-    align-items: center;
-    flex-direction: column;
+.contato {
     background-color: #f0f0f0;
-    padding: 20px;
     border-radius: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
     color: #333;
-    text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 300px;
-    width: 30%;
-    border-top: 100px;
-    position: absolute;
-}
-
-.Imagem de Perfil{
-    width: 100px;
     height: 100px;
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    }
+
+.ImagemdePerfil{
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 10px;
-    size-adjust: 100%;
+
+}
+
+.redesum,.redesdois,.redestres{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100px; }
+.redesum{
+    margin-left: 70%;
+
+}
+.redesdois{
+    margin-left: 130%;
+}
+.redestres{
+    margin-left: 190%;
 }
