@@ -4,51 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 <body>
-    <div class="conteudo">
-        <!--Bloco 1-->
+    <div class="container">
         <div class="primeiro">
             <h1>Perfil</h1>
-                <h2>----Informações sobre mim----</h2>
-                    <p>Nome: Ana Clara Pereira Gomes</p>
-                    <p>Idade: 16 anos (04/04/2008)</p>
-                    <p>Local: Bragança Paulista, São Paulo, Brasil</p>
+            <h2>----Informações sobre mim----</h2>
+            <p>Nome: Ana Clara Pereira Gomes</p>
+            <p>Idade: 16 anos (04/04/2008)</p>
+            <p>Local: Bragança Paulista, São Paulo, Brasil</p>
         </div>
 
-        <!--Bloco 2-->
         <div class="segundo">
             <h3>Quem eu sou?</h3>
-                <p>Desenvolvedora do projeto Artistick, sou gerente
-                    <br> de tarefas e documentação dentro do grupo. Meus trabalhos nesse
-                    <br> cargo incluem analisar e documentar informações (como progressos,
-                    <br> atrasos, reuniões, entre outros) e garantir que a equipe esteja alinhada com 
-                    <br>os objetivos e prazos para entregas de atualizações do aplicativo que está
-                    <br> em progresso de desenvolvimento.
-                </p>
+            <p>Desenvolvedora do projeto Artistick, sou gerente
+                <br> de tarefas e documentação dentro do grupo. Meus trabalhos nesse
+                <br> cargo incluem analisar e documentar informações (como progressos,
+                <br> atrasos, reuniões, entre outros) e garantir que a equipe esteja alinhada com
+                <br> os objetivos e prazos para entregas de atualizações do aplicativo que está
+                <br> em progresso de desenvolvimento.
+            </p>
             <a href="mailto:profissional.acpg@gmail.com"> Contate-me</a>
         </div>
 
-        <!--Bloco 3-->
-        <div class="terceiro">    
-            <img src="fotos/istockphoto-184103864-612x612.jpg" class="ImagemdePerfil">
+        <div class="terceiro">
+            <img src="fotos/fotoo cnpq certa.jpg" class="ImagemdePerfil" alt="Imagem de Perfil">
             <h3> Mais Detalhes</h3>
-                <p>Atualmente aluna do curso de informática, na modalidade técnico - integrado 
-                    <br>no Instituto Federal de São Paulo, no campus Bragança Paulista (IFSP - BRA). 
-                    <br>Pretendo em breve ingressar no curso de Marketing na Univesidade de 
-                    <br>São Paulo (USP)
-                </p>
+            <p>Atualmente aluna do curso de informática, na modalidade técnico - integrado
+                <br> no Instituto Federal de São Paulo, no campus Bragança Paulista (IFSP - BRA).
+                <br> Pretendo em breve ingressar no curso de Marketing na Universidade de
+                <br> São Paulo (USP)
+            </p>
         </div>
     </div>
-    <!-- Bloco de links -->
-    <div class="contato">
-        <a href="https://www.facebook.com/share/1B9qQBM8Lv/"><img src="fotos/facebook.png" class="redesum"></a>
-        <a href="https://www.instagram.com/acpg_ana?igsh=MWdyMjVtb29jdmpsMQ=="><img src="fotos/instagram.jpg" class="redesdois"></a>
-        <a href="https://www.threads.net/@acpg_ana"><img src="fotos/threads.png" class="redestres"></a>
-    </div>
-</body>
-<footer>
 
-</footer>
+    <footer class="contato">
+        <a href="https://www.facebook.com/share/1B9qQBM8Lv/"><img src="fotos/facebook.png" class="redesum" alt="Facebook"></a>
+        <a href="https://www.instagram.com/acpg_ana?igsh=MWdyMjVtb29jdmpsMQ=="><img src="fotos/instagram.jpg" class="redesdois" alt="Instagram"></a>
+        <a href="https://www.threads.net/@acpg_ana"><img src="fotos/threads.png" class="redestres" alt="Threads"></a>
+    </footer>
+    <body class="modo-claro"> <button onclick="alternarModo()">Alternar Modo</button>
+    
+""
+
+        <script>
+            function alternarModo() {
+                document.body.classList.toggle("modo-escuro");
+                document.body.classList.toggle("modo-claro");
+            }
+        </script>
+    </body>
+    </html>
+</body>
 </html>

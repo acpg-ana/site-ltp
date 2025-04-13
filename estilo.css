@@ -1,102 +1,216 @@
+
+
 * {
     box-sizing: border-box;
     margin: 5px;
 }
 
-.conteudo{
-    margin-top: 5%;
-    height: 80%;
-    width: 100%;
-}
-.primeiro,.segundo,.terceiro{
-    height:60%;
-    width: 30%;
-    margin-top: 5%;
-}
-.primeiro{
-    position: absolute;
-    margin-left: 5%;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
+body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.segundo{
-    position: absolute;
-    margin-left: 35%;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.terceiro{
-    position: absolute;
-    margin-left: 65%;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contato {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    color: #333;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100px;
-    width: 100%;
-    margin-top: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     display: flex;
-    }
+    flex-direction: column;
+    align-items: center;
+}
 
-.ImagemdePerfil{
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+    margin-top: 20px;
+}
+
+.primeiro,
+.segundo,
+.terceiro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33% - 20px); /* Ajusta a largura para acomodar as margens */
+    box-sizing: border-box;
+}
+
+/* Para telas menores, os blocos ocuparão mais largura */
+@media (max-width: 768px) {
+    .primeiro,
+    .segundo,
+    .terceiro {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .primeiro,
+    .segundo,
+    .terceiro {
+        width: 100%;
+    }
+}
+
+.ImagemdePerfil {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-
+    margin-bottom: 10px;
 }
 
-.redesum,.redesdois,.redestres{
+.contato {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redesum,
+.redesdois,
+.redestres {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos base (aplicados em ambos os modos) */
+* {
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para as cores */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+    margin-top: 20px;
+}
+
+.primeiro,
+.segundo,
+.terceiro {
     padding: 20px;
     border-radius: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
     text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100px; }
-.redesum{
-    margin-left: 70%;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transição suave */
+}
 
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .primeiro,
+    .segundo,
+    .terceiro {
+        width: calc(50% - 20px);
+    }
 }
-.redesdois{
-    margin-left: 130%;
+
+@media (max-width: 480px) {
+    .primeiro,
+    .segundo,
+    .terceiro {
+        width: 100%;
+    }
 }
-.redestres{
-    margin-left: 190%;
+
+.ImagemdePerfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contato {
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave */
+}
+
+.redesum,
+.redesdois,
+.redestres {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;}
+    
+
+ /* Estilos para o modo claro (padrão)  */
+body.modo-claro {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.modo-claro .primeiro,
+body.modo-claro .segundo,
+body.modo-claro .terceiro {
+    background-color: #fff;
+    border-color: #ddd;
+    color: #333;
+}
+
+body.modo-claro .contato {
+    background-color: #fff;
+    border-color: #ddd;
+    color: #333;
+}
+
+/* Estilos para o modo escuro  */
+body.modo-escuro {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.modo-escuro .primeiro,
+body.modo-escuro .segundo,
+body.modo-escuro .terceiro {
+    background-color: #333;
+    border-color: #555;
+    color: #eee;
+}
+
+body.modo-escuro .contato {
+    background-color: #333;
+    border-color: #555;
+    color: #eee;
+}
+
+body.modo-escuro .redesum,
+body.modo-escuro .redesdois,
+body.modo-escuro .redestres {
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
